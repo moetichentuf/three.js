@@ -3,10 +3,9 @@
 // ------------------------------------------------
 
 
-document.addEventListener("click", function(lala){
 
 // Create an empty scene
-document.getElementById("target").innerHTML = lala;
+
 var scene = new THREE.Scene();
 
 // Create a basic perspective camera
@@ -36,14 +35,15 @@ var cube = new THREE.Mesh( geometry, material );
 
 // Add cube to Scene
 scene.add( cube );
-
+//document.addEventListener("click", function(lala){
+//let lala =document.getElementById("target").innerHTML;
 // Render Loop
-var render = function () {
+var render = function  () {
   requestAnimationFrame( render );
-
+  document.addEventListener("click", function(){
   cube.rotation.x += 0.05;
   cube.rotation.y += 0.05;
-
+  });
   // Render the scene
   renderer.render(scene, camera);
 };
@@ -58,4 +58,4 @@ function onmousewheelchange(e) {
      {
      camera.position.z += 100;
     }
-}});
+};
