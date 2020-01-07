@@ -38,7 +38,23 @@ scene.add( cube );
 //document.addEventListener("click", function(lala){
 //let lala =document.getElementById("target").innerHTML;
 // Render Loop
+
+///var lala = function    () {
+  
+  //requestAnimationFrame( lala );
+  
+  //cube.rotation.x += 0;
+  //cube.rotation.y += 0;
+ 
+  // Render the scene
+  ///renderer.lala(scene, camera);
+ 
+  
+//}
+
+
 var render = function  handleMouseUp  () {
+  
   requestAnimationFrame( render );
   
   cube.rotation.x += 0.05;
@@ -46,7 +62,7 @@ var render = function  handleMouseUp  () {
  
   // Render the scene
   renderer.render(scene, camera);
-  
+  cube.rotation = false;
   document.addEventListener('click', handleMouseUp);
 };
 
