@@ -38,14 +38,16 @@ scene.add( cube );
 //document.addEventListener("click", function(lala){
 //let lala =document.getElementById("target").innerHTML;
 // Render Loop
-var render = function  () {
+var render = function  handleMouseUp  () {
   requestAnimationFrame( render );
-  document.addEventListener("click", function(){
+  
   cube.rotation.x += 0.05;
   cube.rotation.y += 0.05;
-  });
+ 
   // Render the scene
   renderer.render(scene, camera);
+  
+  document.addEventListener('click', handleMouseUp);
 };
 
 render();
