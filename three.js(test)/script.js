@@ -19,7 +19,7 @@ var rotateSpeed = 0;
     var renderer = new THREE.WebGLRenderer({antialias: true});
 
 // Configure renderer clear color
-    renderer.setClearColor("#FFFFFF");
+    renderer.setClearColor("#52bfff");
 
 // Configure renderer size
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -67,7 +67,7 @@ function animate() {
 
     if(isMouseDown) rotateSpeed += 0.02;
     else rotateSpeed /= 1.01;
-    cube.rotation.y += rotateSpeed;
+    cube.rotation.x += rotateSpeed;
 
     render();
 
