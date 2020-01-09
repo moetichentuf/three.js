@@ -65,9 +65,9 @@ function animate() {
 
     requestAnimationFrame(animate);
 
-    if(isMouseDown) rotateSpeed += 0.02;
+    if(isMouseDown) rotateSpeed += 0.003;
     else rotateSpeed /= 1.01;
-    cube.rotation.x += rotateSpeed;
+    cube.rotation.y += rotateSpeed;
 
     render();
 
