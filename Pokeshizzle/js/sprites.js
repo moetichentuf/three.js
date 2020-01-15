@@ -22,19 +22,19 @@ document.getElementById("scanning").addEventListener("click", function () {
 
             // to show all the sprite pics but still with extra string to be removed.
 
-         //   for (let x = 0; x < moodymyboy.abilities.sprites.length; x++) {
-           //     allTheSprites.push(moodymyboy.abilities.sprites[x]);
-           // }
+            //   for (let x = 0; x < moodymyboy.abilities.sprites.length; x++) {
+            //     allTheSprites.push(moodymyboy.abilities.sprites[x]);
+            // }
             allTheSprites = moodymyboy.sprites;
 
             console.log(allTheSprites);
 
             allTheSprites = getSecondPart(allTheSprites);
             console.log(allTheSprites);
-     //       spriteLinks = allTheSprites.split(':').pop();
+            //       spriteLinks = allTheSprites.split(':').pop();
 
 
-         //   document.getElementById("sprites").src = spriteLinks;
+            //   document.getElementById("sprites").src = spriteLinks;
             console.log(spriteLinks);
         });
 
