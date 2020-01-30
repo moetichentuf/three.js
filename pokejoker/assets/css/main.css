@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+}
+* *:focus {
+  outline: none;
+}
+
+#secondPicture {
+  width: 30%;
+  margin-top: 47%;
+  margin-bottom: -10%;
+  z-index: -2;
+}
+
+.text {
+  display: inline-block;
+  margin: 10px 10px;
+  padding-inline: 10%;
+  text-align: center;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid black;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  /* Gives that scrolling effect as the typing happens */
+  /* Adjust as needed */
+  animation: typing 8s, blink-caret 0.6s ease-out infinite;
+}
+
+ul li {
+  display: inline-block;
+  margin: 10px 10px;
+  padding-top: 30px;
+  padding-inline: 10%;
+}
+
+#hidePokemon {
+  width: 30%;
+  filter: brightness(0);
+  top: 10%;
+  position: absolute;
+}
+
+img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  filter: grayscale(100%);
+}
+
+body {
+  font-family: LoRes, sans-serif;
+  background: url("../img/used/bg_bg.svg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-color: #9A9A9A;
+  background-size: cover;
+  background-position: center;
+  font-style: normal;
+  font-weight: 100;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5vmin;
+  font-size: 2vw;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid black;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  /* Gives that scrolling effect as the typing happens */
+  /* Adjust as needed */
+  animation: typing 8s, blink-caret 0.6s ease-out infinite;
+}
+
+@font-face {
+  font-family: LoRes;
+  src: url("../fonts/LoRes12OT-BoldAltOakland.ttf");
+}
+.guessPokemon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.guessPokemon .whichPokemon {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.guessPokemon .whichPokemon .questionMark {
+  font-size: 29vw;
+  left: 10%;
+  position: absolute;
+  top: 10%;
+}
+.guessPokemon .guess {
+  margin-top: 20%;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: block;
+  justify-content: center;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.guessPokemon .guess .guessButton {
+  width: 100%;
+  height: 30%;
+  border: none;
+  padding: 3vmin;
+  display: block;
+  background-image: url("../img/used/guessbtn_guess buttonn.svg");
+  background-repeat: no-repeat;
+  background-color: rgba(148, 225, 255, 0);
+  font-size: 2vw;
+  background-position: center center;
+  font-family: LoRes, sans-serif;
+  background-size: contain;
+}
+.guessPokemon .guess .hiddenPokemon {
+  margin-top: 40%;
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+.catchPokemon {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+}
+.catchPokemon h1 {
+  grid-column: 1/3;
+  display: block;
+}
+.catchPokemon #ashIcon {
+  width: 20%;
+  grid-column: 1/2;
+  margin-left: 65%;
+  z-index: -2;
+  margin-top: 50%;
+}
+.catchPokemon .PokemonIcon {
+  width: 20%;
+  grid-column: 2/3;
+}
+.catchPokemon #fightItem {
+  visibility: hidden;
+}
+
+.textMenu {
+  margin: auto;
+  margin-top: -12vmin;
+  width: 100vmin;
+  background-image: url("../img/used/guessbtn_guess buttonn.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+.textMenu .menuText {
+  text-align: left;
+  margin-left: 30vmin;
+  margin-top: 10vmin;
+  width: 70%;
+  padding: 2vmin;
+}
+.catchIt {
+  display: none;
+}
+
+button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@keyframes typing {
+  from {
+    margin-left: auto;
+    margin-right: auto;
+    width: 0%;
+  }
+  to {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  30% {
+    border-color: grey;
+  }
+}
+a:hover {
+  cursor: pointer;
+}
+
+#myAnimation {
+  width: 4%;
+  height: 4%;
+  position: absolute;
+  background-image: url("../img/used/pokeball_pokeball.svg");
+  background-repeat: no-repeat;
+  margin-top: -10%;
+  margin-left: 40%;
+}
+
+#pokeball {
+  margin-top: 10%;
+  text-decoration: none;
+  border-style: none;
+}
+
+/*# sourceMappingURL=main.css.map */

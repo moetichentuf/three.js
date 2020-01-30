@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+}
+* *:focus {
+  outline: none;
+}
+
+body {
+  font-family: "LoRes 12 OT", sans-serif;
+  background: url("../img/used/bg_bg.svg");
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "LoRes";
+  src: url("../fonts/LoRes12OT-BoldAltOakland.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+.guessPokemon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.guessPokemon .whichPokemon {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.guessPokemon .whichPokemon .questionMark {
+  font-size: 75vmin;
+}
+.guessPokemon .guess {
+  margin-top: 20%;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: block;
+  justify-content: center;
+}
+.guessPokemon .guess .guessButton {
+  width: 90%;
+  margin: 3vmin;
+  padding: 3vmin;
+  display: block;
+  background-image: url("../img/used/guessbtn_guess buttonn.svg");
+  background-repeat: no-repeat;
+  background-color: rgba(148, 225, 255, 0);
+  border: none;
+  background-position: center center;
+  font-family: "LoRes 12 OT", sans-serif;
+}
+.guessPokemon .guess .hiddenPokemon {
+  margin-top: 40%;
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+.catchPokemon {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.catchPokemon .catch {
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.catchPokemon .catch .pokemonIcon {
+  justify-content: flex-end;
+  width: 20%;
+  grid-column: 2/3;
+}
+.catchPokemon .catch #ashIcon {
+  justify-content: flex-start;
+  width: 40%;
+  grid-column: 1/2;
+}
+.catchPokemon .catch #fightItem {
+  visibility: hidden;
+}
+.catchPokemon .textMenu {
+  width: 90%;
+}
+.catchPokemon .textMenu .menuText {
+  /*background-image: url("../img/used/guessbtn_guess buttonn.svg");*/
+  background-color: red;
+  height: 100px;
+  width: 90%;
+  border: 5px red solid;
+}
+
+/*# sourceMappingURL=main.cess.map */

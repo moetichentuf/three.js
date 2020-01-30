@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poke joker</title>
+    <link rel="icon" href="assets/img/used/pokedex-icon.png"> <!--icon that appears on tab-->
+    <meta name="author" content=" created by Imane Moeti Stefan and Ann">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="pokemon game" content="guess the pokemon and catch it if you can!">
+    <meta name="pokemon battle" content="catch the pokemon" >
+    <meta name="pixel game" content="play pokemon" >
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+<h1 id="lala">There is a wild pokemon rapidly coming towards you, wich one is it?</h1>
+<section class="guessPokemon">
+
+    <section class="whichPokemon">
+        <p class="questionMark">?</p>
+    </section>
+
+    <section class="guess">
+        <button value="PLAY" onclick="play()" class="guessButton" id="pokeGuess1"></button>
+        <button value="PLAY" onclick="play()" class="guessButton" id="pokeGuess2"></button>
+        <button value="PLAY" onclick="play()" class="guessButton" id="pokeGuess3"></button>
+        <button value="PLAY" onclick="play()" class="guessButton" id="pokeGuess4"></button>
+    </section>
+
+    <section class="hiddenPokemon">
+        <img src="" alt="guessPokeIcon" id="hidePokemon" class="PokemonIcon">
+    </section>
+</section>
+<audio id="audio" src="http://23.237.126.42/ost/pokemon-original-game-soundtrack/wahjdqip/101%20-%20opening.mp3"></audio>
+<section class="catchIt">
+    <section class="catchPokemon">
+        <h1>A talking <span id="pokeId">pokemon</span> appeared!</h1>
+        <img src="" alt="pokeball" id="fightItem">
+        <img src="assets/img/used/ash_ash.svg" alt="guessPokeIcon" id="ashIcon">
+        <img src="" alt="guessPokeIcon" class="PokemonIcon" id="secondPicture">
+        <div id="heading1"></div>
+    </section>
+    <section class="textMenu">
+
+
+
+
+        <div  class="menuText">
+            <!--            <p class="wildPokemon"> a wild <span class="pokeName">pokemon</span> just appeared</p>-->
+            <div class="chooseItem">
+
+                <button id="pokeball" class="button" onclick="myMove()">pokeball</button>
+                <div id ="myAnimation"></div>
+
+
+
+
+
+
+            </div>
+            <section class="insult">
+                <p id="insultText" class="text"></p>
+            </section>
+            <section class="joke">
+                <p id="jokeText" class="text"></p>
+            </section>
+            <section class="compliment">
+                <p id="complimentText" class="text"></p>
+            </section>
+        </div>
+
+    </section>
+
+</section>
+
+<script src="assets/js/jokescript.js"></script>
+<script src="assets/js/typewriter.js"></script>
+<script src="assets/js/insult.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/func.js"></script>
+</body>
+</html>
+
